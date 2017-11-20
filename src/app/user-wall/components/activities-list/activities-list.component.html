@@ -1,0 +1,22 @@
+<div *ngFor="let activity of acivities">
+
+  <div [ngSwitch]="activity.Type">
+
+    <app-activity-comment
+      *ngSwitchCase="activityTypes.CaseComment"
+      data="activity">
+    </app-activity-comment>
+
+    <app-activity-evidence
+      *ngSwitchCase="activityTypes.CaseEvidence"
+      data="activity">
+    </app-activity-evidence>
+
+    <app-activity-status-changed
+      *ngSwitchCase="activityTypes.CaseStatusChange"
+      data="activity">
+    </app-activity-status-changed>
+
+  </div>
+
+</div>

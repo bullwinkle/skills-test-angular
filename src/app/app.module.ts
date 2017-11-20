@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { UserWallModule } from './user-wall/user-wall.module';
+import {ActivityCommentComponent} from './user-wall/components/activity-comment/activity-comment.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -10,7 +13,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    UserWallModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
