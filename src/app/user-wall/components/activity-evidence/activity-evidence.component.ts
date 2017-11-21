@@ -4,7 +4,10 @@ import { ICaseEvidenceWallActivity } from '../../services/activities.constants';
 @Component({
   selector: 'app-activity-evidence',
   templateUrl: './activity-evidence.component.html',
-  styleUrls: ['./activity-evidence.component.scss']
+  styleUrls: [
+    '../activity-shared-styles.scss',
+    './activity-evidence.component.scss'
+  ]
 })
 export class ActivityEvidenceComponent implements OnInit {
 

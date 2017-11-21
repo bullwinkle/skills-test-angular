@@ -1,32 +1,32 @@
 [
   {
     "Id": "601",
-    "avatar": "http://lorempixel.com/100/100/people/foo/",
+    "avatar": "/assets/images/avatars/1.png",
     "userName": "Semen Barman"
   },
   {
     "Id": "978",
-    "avatar": "http://lorempixel.com/100/100/people/",
+    "avatar": "/assets/images/avatars/2.png",
     "userName": "Some Name"
   },
   {
     "Id": "632",
-    "avatar": "http://lorempixel.com/100/100/people/bar/",
+    "avatar": "/assets/images/avatars/3.png",
     "userName": "Kira Nirra"
   },
   {
     "Id": "226",
-    "avatar": "http://lorempixel.com/100/100/people/baz/",
+    "avatar": "/assets/images/avatars/4.png",
     "userName": "John White"
   },
   {
     "Id": "334",
-    "avatar": "http://lorempixel.com/100/100/people/faz/",
+    "avatar": "/assets/images/avatars/5.png",
     "userName": "Michael Smith"
   },
   {
     "Id": "188",
-    "avatar": "http://lorempixel.com/100/100/people/maaz/",
+    "avatar": "/assets/images/avatars/6.png",
     "userName": "Mr.Brown"
   }
 ]

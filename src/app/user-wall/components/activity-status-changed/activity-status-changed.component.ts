@@ -4,7 +4,10 @@ import { ICaseStatusChangedWallActivity } from '../../services/activities.consta
 @Component({
   selector: 'app-activity-status-changed',
   templateUrl: './activity-status-changed.component.html',
-  styleUrls: ['./activity-status-changed.component.scss']
+  styleUrls: [
+    '../activity-shared-styles.scss',
+    './activity-status-changed.component.scss'
+  ]
 })
 export class ActivityStatusChangedComponent implements OnInit {
 

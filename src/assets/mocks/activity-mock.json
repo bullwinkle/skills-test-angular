@@ -7,8 +7,6 @@
       "CaseId": null,
       "IsFavorite": false,
       "ModificationTimeUnixTimeInMs": 1511211024145,
-      "avatar": "http://lorempixel.com/100/100/people/foo/",
-      "userName": "Semen Barman",
       "Description": "Changed case stage to investigation"
     },
     {
@@ -18,8 +16,6 @@
       "CaseId": null,
       "IsFavorite": false,
       "ModificationTimeUnixTimeInMs": 1511215024145,
-      "avatar": "http://lorempixel.com/100/100/people/",
-      "userName": "Some Name",
       "Description": "Assigned case to Roi Ramot"
     }
   ],
@@ -33,11 +29,9 @@
       "ModificationTimeUnixTimeInMs": 1511215424145,
       "EvidenceName": "Document-1",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "EvidenceThumbnailBase64": "/assets/images/docx.png",
+      "EvidenceThumbnailBase64": "/assets/images/file-types/docx.png",
       "EvidenceId": 190,
-      "FileType": "docx",
-      "avatar": "http://lorempixel.com/100/100/people/bar/",
-      "userName": "Kira Nirra"
+      "FileType": "docx"
     },
     {
       "Type": 1,
@@ -48,11 +42,9 @@
       "ModificationTimeUnixTimeInMs": 1511005024145,
       "EvidenceName": "Document-2",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "EvidenceThumbnailBase64": "/assets/images/pdf.png",
+      "EvidenceThumbnailBase64": "/assets/images/file-types/pdf.png",
       "EvidenceId": null,
-      "FileType": "pdf",
-      "avatar": "http://lorempixel.com/100/100/people/baz/",
-      "userName": "John White"
+      "FileType": "pdf"
     }
   ],
   "CaseCommentWallActivities": [
@@ -63,8 +55,6 @@
       "CaseId": null,
       "IsFavorite": false,
       "ModificationTimeUnixTimeInMs": 1511015024145,
-      "avatar": "http://lorempixel.com/100/100/people/faz/",
-      "userName": "Michael Smith",
       "Comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
@@ -74,8 +64,6 @@
       "CaseId": null,
       "IsFavorite": false,
       "ModificationTimeUnixTimeInMs": 1511205024145,
-      "avatar": "http://lorempixel.com/100/100/people/maaz/",
-      "userName": "Mr.Brown",
       "Comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
   ]
