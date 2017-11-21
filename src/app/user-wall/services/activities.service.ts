@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/observable/from';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/observable/forkJoin';
 
 import {
   ICaseWallData,
@@ -35,11 +36,22 @@ export class ActivitiesService {
 
   getActivities (): Observable<Array<ActivityUnion>> {
 
-    return this.$http.get(`/assets/mocks/activity-mock.json`)
-      .map((result: ICaseWallData) => [
-        ...result.CaseEvidenceWallActivities,
-        ...result.CaseCommentWallActivities,
-        ...result.CaseStatusChangedWallActivities
-      ]);
+    const users$ = this.userService.getUsers();
+    const activities$ = this.$http.get(`/assets/mocks/activity-mock.json`) as Observable<ICaseWallData>;
+
+
+    return Observable.forkJoin( users$, activities$ )
+      .map(([users, result]) => {
+        return [
+          ...result.CaseEvidenceWallActivities,
+          ...result.CaseCommentWallActivities,
+          ...result.CaseStatusChangedWallActivities
+        ].map(
+          el => ({
+            ...el,
+            user: users.find(user => user.Id === el.CreatorUserId)
+          })
+        );
+      });
   }
 }

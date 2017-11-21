@@ -1,0 +1,32 @@
+[
+  {
+    "Id": "601",
+    "avatar": "http://lorempixel.com/100/100/people/foo/",
+    "userName": "Semen Barman"
+  },
+  {
+    "Id": "978",
+    "avatar": "http://lorempixel.com/100/100/people/",
+    "userName": "Some Name"
+  },
+  {
+    "Id": "632",
+    "avatar": "http://lorempixel.com/100/100/people/bar/",
+    "userName": "Kira Nirra"
+  },
+  {
+    "Id": "226",
+    "avatar": "http://lorempixel.com/100/100/people/baz/",
+    "userName": "John White"
+  },
+  {
+    "Id": "334",
+    "avatar": "http://lorempixel.com/100/100/people/faz/",
+    "userName": "Michael Smith"
+  },
+  {
+    "Id": "188",
+    "avatar": "http://lorempixel.com/100/100/people/maaz/",
+    "userName": "Mr.Brown"
+  }
+]
