@@ -31,8 +31,7 @@ export class ActivitiesService {
           ...result.CaseEvidenceWallActivities,
           ...result.CaseCommentWallActivities,
           ...result.CaseStatusChangedWallActivities
-        ].map(
-          el => ({
+        ].map(el => ({
             ...el,
             user: users.find(user => user.Id === el.CreatorUserId)
           })
