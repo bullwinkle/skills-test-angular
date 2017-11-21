@@ -8,9 +8,9 @@ export interface ICaseWallData {
 
 
 export enum WallActivityEnum {
-  CaseStatusChange,
-  CaseEvidence,
-  CaseComment
+  CaseStatusChange = 2,
+  CaseEvidence = 1,
+  CaseComment = 0
 }
 
 
@@ -22,6 +22,7 @@ export interface IBaseWallActivity {
   CaseId: number;
   IsFavorite: boolean;
   ModificationTimeUnixTimeInMs: number;
+  userName: string;
 
 }
 

@@ -11,7 +11,7 @@ import {WallActivityEnum} from '../../constants';
 })
 export class ActivitiesListComponent implements OnInit {
 
-  public acivities = {};
+  public acivities = [];
   public activityTypes = WallActivityEnum;
 
   constructor(

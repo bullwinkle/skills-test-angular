@@ -17,7 +17,7 @@ import {
 
 export const mockedResponse = new CaseWallData();
 
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 2; i++) {
   mockedResponse.CaseCommentWallActivities.push(
     new CaseCommentWallActivity({
       Id: i

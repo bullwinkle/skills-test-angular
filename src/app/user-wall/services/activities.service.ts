@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/observable/from';
+import 'rxjs/add/operator/map';
 
 import {
   ICaseWallData,
@@ -22,21 +23,23 @@ import {
 } from '../model';
 
 import {mockedResponse} from '../mock';
+import {UserService} from '../../core/services/user.service';
 
 @Injectable()
 export class ActivitiesService {
 
   constructor(
-    public $http: HttpClient
+    public $http: HttpClient,
+    public userService: UserService
   ) { }
 
   getActivities (): Observable<Array<ActivityUnion>> {
-    return new Observable((subscriber) => {
-      subscriber.next([
-        ...mockedResponse.CaseEvidenceWallActivities,
-        ...mockedResponse.CaseCommentWallActivities,
-        ...mockedResponse.CaseStatusChangedWallActivities
+
+    return this.$http.get(`/assets/mocks/activity-mock.json`)
+      .map((result: ICaseWallData) => [
+        ...result.CaseEvidenceWallActivities,
+        ...result.CaseCommentWallActivities,
+        ...result.CaseStatusChangedWallActivities
       ]);
-    });
   }
 }

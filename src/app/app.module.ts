@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { UserWallModule } from './user-wall/user-wall.module';
 import {ActivityCommentComponent} from './user-wall/components/activity-comment/activity-comment.component';
 import {HttpClientModule} from '@angular/common/http';
+import { CoreModule } from './core/core.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     UserWallModule,
-    HttpClientModule
+    HttpClientModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

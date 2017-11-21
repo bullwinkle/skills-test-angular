@@ -1,3 +1,12 @@
-<p>
-  activity-comment works!
-</p>
+<div class="activity flexbox">
+  <div class="activity-avatar">
+    <img [src]="data.avatar" alt="">
+  </div>
+  <div class="flex-1">
+    <div class="activity-info">
+      <span class="activity-user-name">{{ data.userName }},</span>
+      <span class="activity-date">{{ data.ModificationTimeUnixTimeInMs | date }}</span>
+    </div>
+    <div class="activity-message-content">{{ data.Comment }}</div>
+  </div>
+</div>

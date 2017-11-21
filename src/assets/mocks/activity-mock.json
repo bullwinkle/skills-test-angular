@@ -1,0 +1,82 @@
+{
+  "CaseStatusChangedWallActivities": [
+    {
+      "Type": 2,
+      "CreatorUserId": "601",
+      "Id": 0,
+      "CaseId": null,
+      "IsFavorite": false,
+      "ModificationTimeUnixTimeInMs": 1511211024145,
+      "avatar": "http://lorempixel.com/100/100/people/foo/",
+      "userName": "Semen Barman",
+      "Description": "Changed case stage to investigation"
+    },
+    {
+      "Type": 2,
+      "CreatorUserId": "978",
+      "Id": 1,
+      "CaseId": null,
+      "IsFavorite": false,
+      "ModificationTimeUnixTimeInMs": 1511215024145,
+      "avatar": "http://lorempixel.com/100/100/people/",
+      "userName": "Some Name",
+      "Description": "Assigned case to Roi Ramot"
+    }
+  ],
+  "CaseEvidenceWallActivities": [
+    {
+      "Type": 1,
+      "CreatorUserId": "632",
+      "Id": 0,
+      "CaseId": null,
+      "IsFavorite": false,
+      "ModificationTimeUnixTimeInMs": 1511215424145,
+      "EvidenceName": "Document-1",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "EvidenceThumbnailBase64": "/assets/images/docx.png",
+      "EvidenceId": 190,
+      "FileType": "docx",
+      "avatar": "http://lorempixel.com/100/100/people/bar/",
+      "userName": "Kira Nirra"
+    },
+    {
+      "Type": 1,
+      "CreatorUserId": "226",
+      "Id": 2,
+      "CaseId": null,
+      "IsFavorite": false,
+      "ModificationTimeUnixTimeInMs": 1511005024145,
+      "EvidenceName": "Document-2",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "EvidenceThumbnailBase64": "/assets/images/pdf.png",
+      "EvidenceId": null,
+      "FileType": "pdf",
+      "avatar": "http://lorempixel.com/100/100/people/baz/",
+      "userName": "John White"
+    }
+  ],
+  "CaseCommentWallActivities": [
+    {
+      "Type": 0,
+      "CreatorUserId": "334",
+      "Id": 0,
+      "CaseId": null,
+      "IsFavorite": false,
+      "ModificationTimeUnixTimeInMs": 1511015024145,
+      "avatar": "http://lorempixel.com/100/100/people/faz/",
+      "userName": "Michael Smith",
+      "Comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "Type": 0,
+      "CreatorUserId": "188",
+      "Id": 3,
+      "CaseId": null,
+      "IsFavorite": false,
+      "ModificationTimeUnixTimeInMs": 1511205024145,
+      "avatar": "http://lorempixel.com/100/100/people/maaz/",
+      "userName": "Mr.Brown",
+      "Comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ]
+}
