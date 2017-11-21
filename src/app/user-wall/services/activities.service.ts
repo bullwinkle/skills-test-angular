@@ -25,7 +25,6 @@ export class ActivitiesService {
     const users$ = this.userService.getUsers();
     const activities$ = this.$http.get(`/assets/mocks/activity-mock.json`) as Observable<ICaseWallData>;
 
-
     return Observable.forkJoin(users$, activities$)
       .map(([users, result]) => {
         return [
