@@ -9,6 +9,11 @@ body {
   background-color: #efefef;
 }
 
+main.wrapper {
+  min-width: 920px;
+  margin: 0 auto;
+}
+
 .flexbox {
   display: flex;
 
