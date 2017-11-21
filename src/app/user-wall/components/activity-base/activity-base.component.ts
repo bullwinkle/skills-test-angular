@@ -18,7 +18,7 @@ export class ActivityBaseComponent implements OnInit {
   ngOnInit() {
   }
 
-  onStarClick (e) {
+  onStarClick () {
     this.data.isFavorite = !this.data.isFavorite;
   }
 
