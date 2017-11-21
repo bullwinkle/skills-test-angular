@@ -4,21 +4,19 @@ import { CaseCommentWallActivity } from '../../services/activities.model';
 @Component({
   selector: 'app-activity-base',
   templateUrl: './activity-base.component.html',
-  styleUrls: [
-    '../activity-shared-styles.scss',
-    './activity-base.component.scss'
-  ]
+  styleUrls: ['./activity-base.component.scss']
 })
 export class ActivityBaseComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   @Input() data: CaseCommentWallActivity;
 
   ngOnInit() {
   }
 
-  onStarClick () {
+  onStarClick() {
     this.data.isFavorite = !this.data.isFavorite;
   }
 
