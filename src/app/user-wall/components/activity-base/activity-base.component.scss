@@ -1,0 +1,63 @@
+.activity {
+  margin-bottom: 30px;
+
+  &:hover {
+    .activity-star-icon {
+      opacity: 1;
+    }
+  }
+
+}
+
+.activity-avatar {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-right: 20px;
+
+  img {
+    border-radius: 100px;
+    width: 100%;
+  }
+
+}
+
+.activity-user-name {
+  font-weight: 600;
+  color: #666;
+}
+
+.activity-info {
+  margin: 5px 0;
+}
+
+.activity-date {
+  color: #666;
+  font-size: 12px;
+}
+
+.activity-message-content {
+  color: #333;
+  line-height: 18px;
+}
+
+.activity-star-icon {
+  width: 26px;
+  height: 37px;
+  padding: 7px 12px;
+  font-size: 26px;
+  box-sizing: content-box;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity .15s ease-in-out, color .1s ease-in-out;
+
+  &:not(.is-favorite) {
+    opacity: 0;
+    color: #aaa;
+  }
+
+  &.is-favorite {
+    color: #f5cd04;
+  }
+}

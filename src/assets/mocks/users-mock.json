@@ -1,32 +1,32 @@
 [
   {
-    "Id": "601",
+    "id": "601",
     "avatar": "/assets/images/avatars/1.png",
-    "userName": "Semen Barman"
+    "name": "Semen Barman"
   },
   {
-    "Id": "978",
+    "id": "978",
     "avatar": "/assets/images/avatars/2.png",
-    "userName": "Some Name"
+    "name": "Some Name"
   },
   {
-    "Id": "632",
+    "id": "632",
     "avatar": "/assets/images/avatars/3.png",
-    "userName": "Kira Nirra"
+    "name": "Kira Nirra"
   },
   {
-    "Id": "226",
+    "id": "226",
     "avatar": "/assets/images/avatars/4.png",
-    "userName": "John White"
+    "name": "John White"
   },
   {
-    "Id": "334",
+    "id": "334",
     "avatar": "/assets/images/avatars/5.png",
-    "userName": "Michael Smith"
+    "name": "Michael Smith"
   },
   {
-    "Id": "188",
+    "id": "188",
     "avatar": "/assets/images/avatars/6.png",
-    "userName": "Mr.Brown"
+    "name": "Mr.Brown"
   }
 ]

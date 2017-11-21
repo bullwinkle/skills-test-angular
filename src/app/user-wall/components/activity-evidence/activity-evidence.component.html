@@ -1,20 +1,8 @@
-<div class="activity flexbox">
-  <div class="activity-avatar">
-    <img [src]="data.user?.avatar" alt="">
+<app-activity-base [data]="data">
+
+  <div class="attachment flexbox align-middle">
+    <img class="attachment-icon" width="50px" height="67px" [src]="data.evidenceThumbnailBase64" alt="">
+    <span class="attachment-name">{{ data.evidenceName }}.{{ data.fileType }}</span>
   </div>
-  <div class="flex-1">
 
-    <div class="activity-info">
-      <span class="activity-user-name">{{ data.user?.userName }},</span>
-      <span class="activity-date">{{ data.ModificationTimeUnixTimeInMs | date }}</span>
-    </div>
-
-    <div class="activity-message-content">{{ data.Description }}</div>
-
-    <div class="attachment flexbox align-middle">
-      <img class="attachment-icon" width="50px" height="67px" [src]="data.EvidenceThumbnailBase64" alt="">
-      <span class="attachment-name">{{ data.EvidenceName }}.{{ data.FileType }}</span>
-    </div>
-
-  </div>
-</div>
+</app-activity-base>

@@ -1,12 +1,1 @@
-<div class="activity flexbox">
-  <div class="activity-avatar">
-    <img [src]="data.user?.avatar" alt="">
-  </div>
-  <div class="flex-1">
-    <div class="activity-info">
-      <span class="activity-user-name">{{ data.user?.userName }},</span>
-      <span class="activity-date">{{ data.ModificationTimeUnixTimeInMs | date }}</span>
-    </div>
-    <div class="activity-message-content">{{ data.Comment  }}</div>
-  </div>
-</div>
+<app-activity-base [data]="data"></app-activity-base>

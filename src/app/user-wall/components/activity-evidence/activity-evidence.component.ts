@@ -1,20 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ICaseEvidenceWallActivity } from '../../services/activities.constants';
+import { CaseEvidenceWallActivity } from '../../services/activities.model';
 
 @Component({
   selector: 'app-activity-evidence',
   templateUrl: './activity-evidence.component.html',
-  styleUrls: [
-    '../activity-shared-styles.scss',
-    './activity-evidence.component.scss'
-  ]
+  styleUrls: ['./activity-evidence.component.scss']
 })
 export class ActivityEvidenceComponent implements OnInit {
 
   constructor() {
   }
 
-  @Input() data: ICaseEvidenceWallActivity;
+  @Input() data: CaseEvidenceWallActivity;
 
   ngOnInit() {
   }

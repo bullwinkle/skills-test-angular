@@ -6,9 +6,9 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/forkJoin';
 
 import {
-  ICaseWallData,
-  ActivityUnion
+  ICaseWallData
 } from './activities.constants';
+import { ActivityUnion, CaseWallData } from './activities.model';
 
 import { UserService } from '../../core/services/user.service';
 
@@ -27,15 +27,15 @@ export class ActivitiesService {
 
     return Observable.forkJoin(users$, activities$)
       .map(([users, result]) => {
+        const wallData = new CaseWallData(result);
         return [
-          ...result.CaseEvidenceWallActivities,
-          ...result.CaseCommentWallActivities,
-          ...result.CaseStatusChangedWallActivities
-        ].map(el => ({
-            ...el,
-            user: users.find(user => user.Id === el.CreatorUserId)
-          })
-        );
+          ...wallData.caseEvidenceWallActivities,
+          ...wallData.caseCommentWallActivities,
+          ...wallData.caseStatusChangedWallActivities
+        ].map(el => {
+          el.user = users.find( user => user.id === el.creatorUserId );
+          return el;
+        });
       });
   }
 }

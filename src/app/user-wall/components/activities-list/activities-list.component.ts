@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivitiesService } from '../../services/activities.service';
-import {} from '../../mock';
-import {} from '../../services/activities.model';
 import { WallActivityEnum } from '../../services/activities.constants';
+
+
 
 @Component({
   selector: 'app-activities-list',

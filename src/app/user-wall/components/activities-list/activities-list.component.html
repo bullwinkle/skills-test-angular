@@ -2,7 +2,7 @@
 
   <div *ngFor="let activity of acivities">
 
-    <div [ngSwitch]="activity.Type">
+    <div [ngSwitch]="activity.type">
 
       <app-activity-comment
         *ngSwitchCase="activityTypes.CaseComment"

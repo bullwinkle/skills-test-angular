@@ -1,20 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ICaseCommentWallActivity } from '../../services/activities.constants';
+import { CaseCommentWallActivity } from '../../services/activities.model';
 
 @Component({
   selector: 'app-activity-comment',
   templateUrl: './activity-comment.component.html',
-  styleUrls: [
-    '../activity-shared-styles.scss',
-    './activity-comment.component.scss'
-  ]
+  styleUrls: [ './activity-comment.component.scss']
 })
 export class ActivityCommentComponent implements OnInit {
 
   constructor() {
   }
 
-  @Input() data: ICaseCommentWallActivity;
+  @Input() data: CaseCommentWallActivity;
 
   ngOnInit() {
   }

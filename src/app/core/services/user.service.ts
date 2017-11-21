@@ -21,7 +21,7 @@ export class UserService {
 
   getUserById(userId: string = ''): Observable<IUser> {
     return this.getUsers()
-      .map(users => users.find(user => user.Id === userId))
+      .map(users => users.find(user => user.id === userId))
       ;
   }
 
@@ -29,7 +29,7 @@ export class UserService {
 
 
 export interface IUser {
-  Id: string;
+  id: string;
   avatar: string;
-  userName: string;
+  name: string;
 }

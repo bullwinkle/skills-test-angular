@@ -5,6 +5,7 @@ import { ActivityCommentComponent } from './components/activity-comment/activity
 import { ActivityEvidenceComponent } from './components/activity-evidence/activity-evidence.component';
 import { ActivityStatusChangedComponent } from './components/activity-status-changed/activity-status-changed.component';
 import { ActivitiesService } from './services/activities.service';
+import { ActivityBaseComponent } from './components/activity-base/activity-base.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { ActivitiesService } from './services/activities.service';
     ActivitiesListComponent,
     ActivityCommentComponent,
     ActivityEvidenceComponent,
-    ActivityStatusChangedComponent
+    ActivityStatusChangedComponent,
+    ActivityBaseComponent
   ],
   exports: [
     ActivitiesListComponent
