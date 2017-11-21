@@ -1,12 +1,17 @@
 <div class="activity flexbox">
   <div class="activity-avatar">
+
     <img [src]="data.user?.avatar" alt="">
+
   </div>
   <div class="flex-1">
     <div class="activity-info">
+
       <span class="activity-user-name">{{ data.user?.name }},</span>
       <span class="activity-date">{{ data.modificationTimeUnixTimeInMs | date }}</span>
+
     </div>
+
     <div class="activity-message-content">{{ data.description  }}</div>
 
     <ng-content></ng-content>
