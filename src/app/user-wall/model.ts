@@ -25,7 +25,7 @@ export class BaseWallActivity implements IBaseWallActivity {
   CaseId = null;
   IsFavorite = false;
   ModificationTimeUnixTimeInMs = null;
-  userName: '';
+  user = null;
 
   constructor (data = {}) {
     Object.assign(this, data);

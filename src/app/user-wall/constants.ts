@@ -1,3 +1,5 @@
+import {IUser} from '../core/services/user.service';
+
 export interface ICaseWallData {
 
   CaseCommentWallActivities: ICaseCommentWallActivity[];
@@ -22,7 +24,7 @@ export interface IBaseWallActivity {
   CaseId: number;
   IsFavorite: boolean;
   ModificationTimeUnixTimeInMs: number;
-  userName: string;
+  user?: IUser;
 
 }
 
