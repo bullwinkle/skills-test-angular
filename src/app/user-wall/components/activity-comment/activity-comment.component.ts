@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {ICaseCommentWallActivity} from '../../constants';
+import { Component, Input, OnInit } from '@angular/core';
+import { ICaseCommentWallActivity } from '../../services/activities.constants';
 
 @Component({
   selector: 'app-activity-comment',
@@ -8,10 +8,12 @@ import {ICaseCommentWallActivity} from '../../constants';
 })
 export class ActivityCommentComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   @Input() data: ICaseCommentWallActivity;
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
 }

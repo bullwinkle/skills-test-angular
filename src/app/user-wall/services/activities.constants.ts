@@ -1,4 +1,4 @@
-import {IUser} from '../core/services/user.service';
+import { IUser } from '../../core/services/user.service';
 
 export interface ICaseWallData {
 

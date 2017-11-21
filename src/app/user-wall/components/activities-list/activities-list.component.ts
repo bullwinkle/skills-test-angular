@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivitiesService} from '../../services/activities.service';
+import { ActivitiesService } from '../../services/activities.service';
 import {} from '../../mock';
-import {} from '../../model';
-import {WallActivityEnum} from '../../constants';
+import {} from '../../services/activities.model';
+import { WallActivityEnum } from '../../services/activities.constants';
 
 @Component({
   selector: 'app-activities-list',
@@ -15,8 +15,8 @@ export class ActivitiesListComponent implements OnInit {
   public activityTypes = WallActivityEnum;
 
   constructor(
-    public activitiesService: ActivitiesService
-  ) { }
+    public activitiesService: ActivitiesService) {
+  }
 
   ngOnInit() {
     this.activitiesService.getActivities()

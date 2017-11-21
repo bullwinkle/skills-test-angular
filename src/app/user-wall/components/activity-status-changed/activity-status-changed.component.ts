@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {ICaseStatusChangedWallActivity} from '../../constants';
+import { Component, Input, OnInit } from '@angular/core';
+import { ICaseStatusChangedWallActivity } from '../../services/activities.constants';
 
 @Component({
   selector: 'app-activity-status-changed',
@@ -8,7 +8,8 @@ import {ICaseStatusChangedWallActivity} from '../../constants';
 })
 export class ActivityStatusChangedComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   @Input() data: ICaseStatusChangedWallActivity;
 

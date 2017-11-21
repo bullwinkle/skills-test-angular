@@ -23,4 +23,5 @@ import { ActivitiesService } from './services/activities.service';
     ActivitiesService
   ]
 })
-export class UserWallModule { }
+export class UserWallModule {
+}

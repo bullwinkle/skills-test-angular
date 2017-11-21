@@ -5,7 +5,7 @@ import {
   ICaseCommentWallActivity,
   ICaseEvidenceWallActivity,
   ICaseStatusChangedWallActivity
-} from './constants';
+} from './activities.constants';
 
 
 export class CaseWallData implements ICaseWallData {
@@ -27,7 +27,7 @@ export class BaseWallActivity implements IBaseWallActivity {
   ModificationTimeUnixTimeInMs = null;
   user = null;
 
-  constructor (data = {}) {
+  constructor(data = {}) {
     Object.assign(this, data);
   }
 

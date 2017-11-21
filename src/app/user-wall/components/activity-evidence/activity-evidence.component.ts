@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {ICaseEvidenceWallActivity} from '../../constants';
+import { Component, Input, OnInit } from '@angular/core';
+import { ICaseEvidenceWallActivity } from '../../services/activities.constants';
 
 @Component({
   selector: 'app-activity-evidence',
@@ -8,7 +8,8 @@ import {ICaseEvidenceWallActivity} from '../../constants';
 })
 export class ActivityEvidenceComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   @Input() data: ICaseEvidenceWallActivity;
 
