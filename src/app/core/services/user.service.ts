@@ -6,23 +6,16 @@ import 'rxjs/add/observable/of';
 @Injectable()
 export class UserService {
 
-  public users = [];
+  public users: IUser[] = [];
 
   constructor(
     public $http: HttpClient) {
   }
 
-  getUsers(): Observable<Array<IUser>> {
+  getUsers(): Observable<IUser[]> {
     return this.users.length
       ? Observable.of(this.users)
-      : this.$http.get('/assets/mocks/users-mock.json') as Observable<Array<IUser>>
-      ;
-  }
-
-  getUserById(userId: string = ''): Observable<IUser> {
-    return this.getUsers()
-      .map(users => users.find(user => user.id === userId))
-      ;
+      : this.$http.get<IUser[]>('/assets/mocks/users-mock.json');
   }
 
 }
